@@ -3,7 +3,9 @@ import { unstable_noStore as noStore } from "next/cache";
 export async function getWeatherData(placeName: string) {
     noStore();
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=2b501ee58ee58074460e6b098f3f8934&units=metric`;
+    const apiKey = process.env.API_KEY;
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=${apiKey}&units=metric`;
 
     var temp;
 
