@@ -21,11 +21,11 @@ export default async function Page({ params }: { params: { placeName: string } }
                 <PlaceHeader placeName={ name } country={ country }/>
                 <div className="flex flex-col">
                     <div className="flex m-2.5 flex-row items-stretch">
-                        <HourlyCard data={ hourly } timezone_offset={ timezone_offset } />
+                        <HourlyCard data={ hourly } timezoneOffset={ timezone_offset } />
                     </div>
                     <div className="flex m-2.5 flex-row items-stretch">
                         <div className="w-1/2">
-                            <TemperatureCard temp={ temp } feels_like={ feels_like } />
+                            <TemperatureCard temp={ temp } feelsLike={ feels_like } />
                         </div>
                         <div className="w-1/2">
                             <ConditionsCard data={ weather[0] } />

@@ -12,26 +12,22 @@ interface windTypes {
 
 interface temperatureTypes {
     temp: number,
-    feels_like: number
-}
-
-interface hourlyTypes {
-    data: hourlyWeather[]
+    feelsLike: number
 }
 
 interface hourlyWeather {
     dt: number,
     temp: number,
-    feels_like: number,
+    feelsLike: number,
     pressure: number,
     humidity: number,
-    dew_point: number,
+    dewPoint: number,
     uvi: number,
     clouds: number,
     visibility: number,
-    wind_speed: number,
-    wind_gust: number,
-    wind_deg: number,
+    windSpeed: number,
+    windGust: number,
+    windDeg: number,
     pop: number,
     rain: {
         "1h": number
