@@ -1,6 +1,6 @@
 import { formatDate } from "../lib/stuff";
 
-export default function SunTimesCard({ rise, set, timezone }: { rise: number, set: number, timezone: number }) {
+export default function SunTimesCard({ rise, set, timezone }: sunTimes) {
     return (
         <div className="m-2.5 flex h-full backdrop-blur-xl bg-white drop-shadow-xl bg-opacity-25 p-[50px] rounded-3xl text-center flex-row justify-center">
             <div className="w-1/2 justify-center flex flex-col">

@@ -10,3 +10,7 @@ export function formatDate(input: Date) {
   const minutes = input.getMinutes() < 10 ? `0${input.getMinutes()}` : input.getMinutes();
   return `${hours}:${minutes}`;
 }
+
+export function formatHours(input: Date) {
+  return input.getHours() < 10 ? `0${input.getHours()}` : input.getHours();
+}
