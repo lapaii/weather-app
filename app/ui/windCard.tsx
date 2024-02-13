@@ -1,6 +1,4 @@
-export default function WindCard({ data }: { data: { speed: number, deg: number, gust: number}}) {
-    const { speed, deg, gust } = data;
-
+export default function WindCard({ speed, deg, gust }: { speed: number, deg: number, gust: number}) {
     if (!gust) {
         return (
             <div className="m-2.5 flex h-full backdrop-blur-xl bg-white drop-shadow-xl bg-opacity-25 p-[50px] rounded-3xl text-center flex-row justify-center">
